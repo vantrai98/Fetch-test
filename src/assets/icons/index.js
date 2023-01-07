@@ -4,3 +4,4 @@ export { default as homeIcon } from "./home.svg";
 export { default as bellIcon } from "./bell.svg";
 export { default as walletIcon } from "./wallet.svg";
 export { default as personIcon } from "./person.svg";
+export { default as LCoinIcon } from "./l-coin.svg";

@@ -1,5 +1,12 @@
+import { Layout } from "components";
+import { TierPage } from "pages";
+
 function App() {
-  return <div className="App">fetch test</div>;
+  return (
+    <Layout>
+      <TierPage />
+    </Layout>
+  );
 }
 
 export default App;
