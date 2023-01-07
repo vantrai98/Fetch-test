@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import { Box, Icon } from "components";
 import { LCoinIcon } from "assets/icons";
+import { formatCoinNumber } from "utils";
 
 const Root = styled.div`
   width: 200px;
@@ -58,7 +59,7 @@ export default function Product({ data, coinBalance }) {
       <Box padding="16px 16px 20px 16px" marginTop="-5px">
         <DiscountValue $insufficientCoins={insufficientCoins}>
           {insufficientCoins && <Icon src={LCoinIcon} marginRight="4px" />}
-          {discountValue} Coins
+          {formatCoinNumber(discountValue)} Coins
         </DiscountValue>
         <DiscountDescription $insufficientCoins={insufficientCoins}>
           {discountDescription}
